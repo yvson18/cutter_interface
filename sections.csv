@@ -1,0 +1,8 @@
+start,end,label
+0,14,intro
+14,46,verse 1
+46,78,chorus 1
+78,110,verse 2
+110,143,chorus 2
+143,175,bridge
+175,208,verse 3
