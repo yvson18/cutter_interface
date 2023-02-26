@@ -1,4 +1,5 @@
 venv
 .python-version
 *.wav
-.csv
+*.csv
+__pycache__

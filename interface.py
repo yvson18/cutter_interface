@@ -1,10 +1,7 @@
-from pydub import AudioSegment
-import pandas as pd
-import os
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
-from cutHandler import cutter_chunks
+from cutHandler import chunk_cutter
 
 def select_audio_file():
     audio_path = filedialog.askopenfilename(
@@ -38,7 +35,7 @@ def generate_audio_sections():
 
     try:
         # Gera as seções de áudio
-        cutter_chunks(audio_path, sections_path, output_directory)
+        chunk_cutter(audio_path, sections_path, output_directory)
         messagebox.showinfo("Operação concluída", "As seções de áudio foram geradas com sucesso.")
         # Reinicializa a interface
         audio_path_button["text"] = "Selecione o arquivo de áudio"
